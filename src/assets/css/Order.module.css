@@ -1,0 +1,14 @@
+.bgColor {
+	background-color: #1c405d;
+}
+.focusNone,
+.focusNone:focus,
+.focusNone input:focus,
+.focusNone input:active,
+.focusNone input:hover {
+	border: none !important;
+	border-color: inherit !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	outline: 0 !important;
+}

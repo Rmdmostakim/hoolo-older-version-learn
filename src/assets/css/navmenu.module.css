@@ -1,0 +1,7 @@
+.link a {
+  text-decoration: none !important;
+  color: #747474;
+}
+.active {
+  color: #1675e0 !important;
+}

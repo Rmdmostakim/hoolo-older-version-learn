@@ -1,0 +1,157 @@
+.container {
+	box-shadow: 0 0 5px #c4c1c1;
+	background: #fcfcfc none repeat scroll 0 0;
+	border-radius: 8px;
+	margin-top: 1rem;
+	max-width: 100%;
+	height: 28rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.cover {
+	position: relative;
+}
+.cover img {
+	width: 100%;
+	height: 180px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+.heart {
+	position: absolute;
+	top: 0px;
+	right: 4px;
+}
+.description {
+	margin: 10px;
+}
+.title {
+	font-size: 18px;
+	color: black;
+	font-weight: 600;
+}
+.summary {
+	height: 60px;
+	overflow: hidden;
+}
+.creator {
+	color: #747474;
+	font-size: 12px;
+	font-weight: 400;
+}
+.textstyle {
+	font-size: 16px;
+	font-weight: 300;
+	color: #8f8f8f;
+	margin-bottom: 5px;
+}
+/*course */
+.forflex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.members {
+	font-weight: 500;
+	font-size: 16px;
+	color: black;
+}
+/* mycourse */
+.forflextime {
+	display: flex;
+	align-items: center;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+/*cart button*/
+.buttonwhite {
+	width: 100%;
+	color: black !important;
+	background-color: white;
+	padding-inline: "3px";
+	margin-bottom: 8px;
+	max-width: 6rem;
+}
+.buttonblue {
+	width: 100%;
+	color: white;
+	background-color: #1c405d;
+	padding-inline: "3px";
+	margin-bottom: 8px;
+	max-width: 6rem;
+	margin: 5px;
+}
+.buttonblue:hover {
+	color: white;
+	background-color: #1c405d;
+}
+.footer {
+	width: 100%;
+	padding: 10px;
+}
+.footer button {
+	background-color: #1c405d;
+}
+.footer button:focus {
+	background-color: #1c405d !important;
+	color: white;
+}
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.buttoncartblue {
+	width: 100%;
+	color: white;
+	background-color: #1c405d;
+	padding-inline: "3px";
+	text-align: center;
+}
+.buttoncartblue:hover {
+	color: white;
+	background-color: #1c405d;
+}
+.ashcartbtn {
+	background-color: rgb(172, 172, 172);
+	color: white;
+	padding-inline: "3px";
+	margin-bottom: 8px;
+	margin: 5px;
+}
+.addcartbtn:hover {
+	background-color: rgb(172, 172, 172);
+	color: white;
+	padding-inline: "3px";
+	margin-bottom: 8px;
+	margin: 5px;
+}
+.bluecartbtn {
+	background-color: #1c405d;
+	color: white;
+	padding-inline: "3px";
+	margin-bottom: 8px;
+	margin: 5px;
+}
+.bluecartbtn:hover {
+	background-color: #1c405d;
+	color: white;
+	padding-inline: "3px";
+	margin-bottom: 8px;
+	margin: 5px;
+}
+.circlebtn {
+	background-color: rgb(216, 216, 216);
+	font-size: 16px;
+	font-weight: 600;
+	border-radius: 50%;
+	margin: 5px;
+}
+.btnbox {
+	display: flex;
+	align-items: center;
+}
+.counter {
+	width: 50%;
+}

@@ -1,0 +1,41 @@
+.container {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  bottom: 0;
+  display: block;
+  background-color: #f9f9f9;
+  box-shadow: 1px 1px 1rem #979797;
+  z-index: 100;
+}
+.menuItem {
+  width: 18vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  font-size: 28px;
+}
+.menuIcon {
+  width: 50px;
+  height: 50px;
+  font-size: 28px;
+  line-height: 38px;
+  padding: 2px;
+  color: #9498b0;
+  margin-bottom: -10px;
+  font-size: 28px;
+}
+.menuText {
+  color: #9498b0;
+  display: block;
+  font-size: 12px;
+}
+@media (min-width: 767px) {
+  .mobileNav {
+    display: none;
+  }
+}

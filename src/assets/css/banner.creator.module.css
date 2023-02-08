@@ -1,0 +1,124 @@
+.imagebanner {
+	width: 100%;
+	height: 20rem;
+}
+.dp {
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+	max-width: 6rem;
+}
+.banner {
+	position: relative;
+	height: 20rem;
+	background-image: url("../images/bannerc.png");
+	object-fit: fill;
+	background-position: center;
+	top: 0;
+}
+.image {
+	width: 100%;
+	height: 20rem;
+}
+.shadow {
+	background: linear-gradient(
+		180deg,
+		rgba(200, 231, 255, 0.33) -25.68%,
+		rgba(0, 19, 34, 0.53) 100%
+	);
+	position: relative;
+	top: -100%;
+	height: 20rem;
+	width: 100%;
+}
+.info {
+	position: relative;
+	top: -200%;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	height: 20rem;
+}
+.name {
+	color: white;
+	font-weight: 500;
+	font-size: 28px;
+}
+.followBlock {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-size: 16px;
+	justify-content: center;
+}
+.followbtn {
+	color: white;
+	border-radius: 20px;
+	border: 2px solid white;
+	padding-inline: 2rem;
+	font-size: 16px;
+	padding-inline: 9px;
+}
+.following {
+	color: white;
+	padding-inline: 9px;
+}
+.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+@media screen and (min-width: 426px) and (max-width: 1320px) {
+	.dp {
+		width: 6rem !important;
+		height: 6rem !important;
+	}
+	.name {
+		font-weight: 400;
+		font-size: 20px;
+	}
+	.banner {
+		height: 15rem;
+	}
+	.image {
+		height: 15rem;
+	}
+	.info {
+		height: 15rem;
+	}
+	.shadow {
+		height: 15rem;
+	}
+}
+@media (max-width: 425px) {
+	.dp {
+		width: 4rem !important;
+		height: 4rem !important;
+	}
+	.name {
+		font-weight: 400;
+		font-size: 14px;
+	}
+	.banner {
+		height: 10rem;
+	}
+	.image {
+		height: 10rem;
+	}
+	.info {
+		height: 10rem;
+	}
+	.shadow {
+		height: 10rem;
+	}
+	.followBlock {
+		font-size: 12px;
+		margin-top: 6px;
+		margin-bottom: 6px;
+	}
+	.followbtn {
+		font-size: 12px;
+		border: 1px solid white;
+	}
+}

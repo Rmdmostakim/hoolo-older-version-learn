@@ -1,0 +1,45 @@
+/* Scroll */
+/*
+.scrollY::-webkit-scrollbar {
+	display: none;
+} */
+.scrollX::-webkit-scrollbar {
+	display: none;
+}
+.imgList {
+	max-height: 72vh;
+	overflow: hidden;
+}
+.imgList:hover {
+	overflow-y: scroll;
+}
+.feature img {
+	height: 71vh;
+}
+/* gallry images */
+.images {
+	width: 100%;
+	height: 100px;
+}
+.images img {
+	width: 100%;
+	height: 100px;
+}
+
+@media (max-width: 767px) {
+	.feature img {
+		height: 55vh;
+	}
+	.mleft {
+		margin-left: -45px;
+	}
+	.images {
+		width: 100px;
+		margin-inline-end: 5px;
+		height: 80px;
+	}
+	.images img {
+		width: 100px;
+		height: 80px;
+	}
+}

@@ -1,0 +1,7 @@
+.container {
+	max-height: 92vh;
+	overflow: hidden;
+}
+.container:hover {
+	overflow-y: scroll;
+}

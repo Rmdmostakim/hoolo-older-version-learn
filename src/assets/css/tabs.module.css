@@ -1,0 +1,19 @@
+.link a {
+    text-decoration: none !important;
+    color: #747474;
+  }
+  .active {
+    color: #1675e0 !important;
+  }
+.tabGroup{
+    border: none;
+    width: 100%;
+    justify-content: space-around;
+}
+.tabElement{
+    width: 100%;
+    text-align: center;
+}  
+.tabElement label {
+    width: 100% !important;
+}

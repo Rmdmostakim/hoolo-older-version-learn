@@ -1,0 +1,62 @@
+/* comment drawer */
+.commentDrawer {
+	left: 26%;
+	width: 48%;
+}
+@media screen and (max-width: 767px) {
+	.commentDrawer {
+		width: 100%;
+		left: 0%;
+	}
+}
+/* comments */
+.commentFull {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 1rem;
+	height: 18rem;
+}
+.comments {
+	height: 16rem;
+	overflow-y: scroll;
+}
+.comment {
+	display: flex;
+	flex-direction: row;
+}
+.commentbox {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	padding-inline: 10px;
+}
+.commentinput {
+	width: 100%;
+	padding-inline: 10px;
+}
+.button {
+	border: none !important;
+	color: blue;
+}
+/* width */
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}

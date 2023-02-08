@@ -1,0 +1,6 @@
+.scrollX::-webkit-scrollbar {
+	display: none;
+}
+.bgSoft {
+	background: linear-gradient(#d9d9d9 10%);
+}

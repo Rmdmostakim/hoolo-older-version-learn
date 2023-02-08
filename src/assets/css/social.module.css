@@ -1,0 +1,6 @@
+@media (max-width: 767px) {
+	.bottom {
+		bottom: 25vh !important;
+		right: 0.5rem !important;
+	}
+}

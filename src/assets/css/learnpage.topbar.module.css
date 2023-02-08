@@ -1,0 +1,35 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: white;
+}
+.filterBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.myclassbtn {
+  background-color: rgb(236 236 236);
+  border-radius: 35px;
+  margin-inline: 3px;
+  font-size: 14px;
+  text-decoration: none !important;
+}
+.myclassbtn:active:focus {
+  background-color: #1c405d;
+  color: white;
+}
+@media (max-width: 425px) {
+  .myclassbtn,
+  .title {
+    font-size: 10px;
+  }
+  .learnNav {
+    padding-inline: 5px;
+    font-size: 10px;
+  }
+}

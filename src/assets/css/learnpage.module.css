@@ -1,0 +1,7 @@
+.fixed {
+    position: fixed !important;
+  }
+  .featured {
+    right: 0;
+  }
+  

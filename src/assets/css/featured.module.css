@@ -1,0 +1,11 @@
+.container {
+	width: 23vw;
+}
+.container li {
+	list-style: none;
+	margin-bottom: 1rem;
+}
+.container li a {
+	color: #000000;
+	text-decoration: none;
+}

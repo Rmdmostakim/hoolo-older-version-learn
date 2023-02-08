@@ -1,0 +1,50 @@
+.btntabs {
+	width: 100%;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	height: 50px;
+	font-weight: 700;
+	font-size: 20px;
+	border-radius: 0px;
+	background-color: rgb(206, 206, 206);
+	color: black;
+	border: none;
+}
+.btntabs:hover,
+.btntabs:active,
+.btntabs:focus {
+	background-color: #1c405d !important;
+	color: rgb(255, 255, 255);
+}
+.active {
+	background-color: #1c405d !important;
+	color: rgb(255, 255, 255);
+}
+.nav {
+	display: flex;
+	width: 100%;
+}
+.tab {
+	width: 50%;
+}
+.p {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+@media (max-width: 768px) {
+	.navlink {
+		height: 35px;
+		font-weight: 600;
+		font-size: 16px;
+	}
+}
+@media (max-width: 425px) {
+	.navlink {
+		height: 30px;
+		font-weight: 500;
+		font-size: 14px;
+	}
+}

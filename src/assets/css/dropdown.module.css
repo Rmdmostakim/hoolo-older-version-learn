@@ -1,0 +1,28 @@
+.parent {
+	display: none;
+}
+.child {
+	display: none;
+}
+.grand li,
+.parent li,
+.child li {
+	list-style: none;
+	font-size: 1.2 vw;
+}
+.grand li a,
+.parent li a,
+.child li a {
+	text-decoration: none;
+}
+.grand li:hover > .parent,
+.grand li:active > .parent {
+	display: block;
+	transition-delay: 1s;
+	transform: translate();
+}
+.parent li:hover > .child,
+.parent li:active > .child {
+	display: block;
+	transition-delay: 1s;
+}

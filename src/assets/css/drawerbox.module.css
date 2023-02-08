@@ -1,0 +1,23 @@
+.btnTitle{
+    font-size: 10px;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .drawerContent{
+    width: 100%;
+    height: 90vh;
+    overflow-y: scroll;
+    padding: 5px;
+  }
+
+
+  /* drawer */
+/* .drawerBody{
+    padding-inline: 0px !important;
+    padding-top: 2rem !important;
+} */

@@ -1,0 +1,28 @@
+.container {
+	padding: 2px;
+	width: 100%;
+}
+.container button {
+	border: 1px solid #000000;
+	border-radius: 20px;
+	min-width: 100px;
+}
+
+.container button:hover {
+	background-color: #1c405d;
+	border: 1px solid #1c405d;
+	border-radius: 20px;
+	color: #ffffff;
+}
+.container button:focus {
+	background-color: #1c405d;
+	border: 1px solid #1c405d;
+	border-radius: 20px;
+	color: #ffffff;
+}
+.container button:active {
+	background-color: #1c405d;
+	border: 1px solid #1c405d;
+	border-radius: 20px;
+	color: #ffffff;
+}

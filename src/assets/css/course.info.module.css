@@ -1,0 +1,7 @@
+.buyBtn,
+.buyBtn:hover,
+.buyBtn:active,
+.buyBtn:focus {
+  background-color: #1c405d;
+  color: #ffffff;
+}

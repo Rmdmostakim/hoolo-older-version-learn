@@ -1,0 +1,14 @@
+.instructor {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+.intructorHeading {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.textJustify {
+  text-align: justify;
+}

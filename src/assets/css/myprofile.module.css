@@ -1,0 +1,12 @@
+.iconGroup{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
+    text-align: center;
+}
+.infoTab{
+    margin-right: 5px;
+}

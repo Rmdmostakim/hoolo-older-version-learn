@@ -1,0 +1,21 @@
+.drawerBtn {
+	background-color: white !important;
+}
+.container {
+	width: 100%;
+}
+.header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+.contentBox {
+	height: 90vh;
+	overflow-y: scroll;
+}
+.hover:hover {
+	color: #ffb300 !important;
+	transition: 0.5s ease;
+}
