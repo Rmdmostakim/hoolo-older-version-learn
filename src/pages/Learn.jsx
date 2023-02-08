@@ -17,9 +17,9 @@ export default function Learn() {
         if (workshoptitle === 'instructor') {
             return <Instructors/>
         }
-        if (workshoptitle === 'categories') {
-            return <LearnCategory/>
-        }
+        // if (workshoptitle === 'categories') {
+        //     return <LearnCategory/>
+        // }
         return <Courses />;
     };
     return (
@@ -42,9 +42,9 @@ export default function Learn() {
                             Instructor
                         </Radio>
 
-                        <Radio value="recorded" onChange={() => workshopTitleHandler('categories')}>
+                        {/* <Radio value="recorded" onChange={() => workshopTitleHandler('categories')}>
                             Categories
-                        </Radio>
+                        </Radio> */}
                     </RadioGroup>
                 </div>
             <div>{workshopView()}</div>

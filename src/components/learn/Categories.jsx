@@ -1,10 +1,16 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Col, Row,Container, Button } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
+import Coursecard from '../Cards/course/Card';
 import { Link } from 'react-router-dom';
+import ProductPlaceholder from '../placeholders/Product';
 import category from '../../api/category';
-export default function LearnCategory({ title }) {
+import axios from 'axios';
+import config from '../../api/config';
+export default function Categories({ title }) {
     const { small, navHeight, bannerHeight,learFixed } = useSelector((state) => state.device);
+    const [isLoading,setLoading] = useState(false);
+    const [courses,setCourses] = useState(null);
     const { dpCategories } = useSelector((state) => state.category);
     const dispatch = useDispatch();
     useEffect(() => {
@@ -21,20 +27,46 @@ export default function LearnCategory({ title }) {
         height:'80vh',
         overflowY:'scroll',
     }
-    if(small){
-        return null;
+    const categoryHandler = async(uuid) =>{
+        setLoading(true);
+        await axios.post(`${config.baseUrl}course/get/category`,{uuid},config.basicHeader).then((res)=>{
+            if(res.status === 200){
+                if(res.data.length>0){
+                    setCourses(res.data);
+                }else{
+                    setCourses(null);
+                }
+                
+            }
+            setLoading(false);
+        }).catch(()=>   setLoading(false));
     }
     return (
-        <Container fluid style={{ height:'100vh' }}>
-            <Row className='g-0'>
-                {dpCategories && dpCategories.map((item)=>(
-                    <Col md={4} sm={12} key={item.uuid}>
-                    <Button variant='none' className='px-0 py-2'>
-                        <img className='img-fluid w-100' src={item.icon} alt={item.name} />
-                    </Button>
-                    </Col>
-                ))}
-            </Row>
-        </Container>
+        <>
+            <div>
+                <Row className='g-0'>
+                    {dpCategories && dpCategories.map((item)=>(
+                        <Col md={4} sm={12} key={item.uuid}>
+                        <Button variant='none' className='px-0 py-2' onClick={()=>categoryHandler(item.uuid)}>
+                            <img className='img-fluid w-100' src={item.icon} alt={item.name} />
+                        </Button>
+                        </Col>
+                    ))}
+                </Row>
+            </div>
+            <div>
+                <Row className="gx-2">
+                    {isLoading ? (
+                        <ProductPlaceholder />
+                    ) : (
+                        courses && courses.map((item) => (
+                            <Col lg={4} md={6} sm={12} key={Math.random()}>
+                                <Coursecard course={item} buttonable={false} counter={false} />
+                            </Col>
+                        ))
+                    )}
+                </Row>
+            </div>
+        </>
        ) ;
 }
