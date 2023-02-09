@@ -26,6 +26,8 @@ url.getAllCourses = `${config.baseUrl}course/get/all`;
 url.getCourseDetails = `${config.baseUrl}course/get/details`;
 url.getUserCourses = `${config.baseUrl}course/user`;
 url.getAllInstructor = `${config.baseUrl}instructor/get/all`;
+url.getInstructorInfo = `${config.baseUrl}instructor/info`;
+url.getInstructorCourses = `${config.baseUrl}course/instructor`;
 
 // course booking
 url.courseBooking = `${config.baseUrl}course/payment/booking`;

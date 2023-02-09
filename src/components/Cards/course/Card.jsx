@@ -34,7 +34,7 @@ export default function Card(props) {
             <Body
                 uuid={uuid}
                 title={title}
-                instructor={instructor.full_name}
+                instructor={instructor}
                 summary={details.summary}
                 timers={timers}
                 expired={expired}

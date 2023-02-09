@@ -14,8 +14,8 @@ export default function Body(props) {
             <br/>
             <small>
                 By &nbsp;
-                <Link to="/instructor" className="text-black-50">
-                    {instructor}
+                <Link to={`/instructor/${instructor.instructor_uuid}`} className="text-black-50">
+                    {instructor.full_name}
                 </Link>
             </small>
             <p className={Class.summary}>{summary.slice(0, 100)}</p>

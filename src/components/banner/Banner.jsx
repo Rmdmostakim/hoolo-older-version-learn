@@ -13,8 +13,11 @@ function Banner() {
     const { isLoading } = useSelector((state) => state.category);
     const dispatch = useDispatch();
     const bannerHeight = () => {
-        const { clientHeight } = ref.current;
-        dispatch(setBannerHeight(clientHeight));
+        if(ref.current){
+            const { clientHeight } = ref.current;
+            dispatch(setBannerHeight(clientHeight));
+        }
+        
     };
     useEffect(() => {
         window.addEventListener('scroll', bannerHeight);

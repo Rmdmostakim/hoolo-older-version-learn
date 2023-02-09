@@ -41,6 +41,7 @@ import TradeLnc from "../components/loading/TradeLnc";
 import Learn from "../pages/Learn";
 import Course from '../pages/Course';
 import Coursepayment from '../pages/Coursepayment';
+import Instructor from '../pages/Instructor';
 function Approutes() {
     return (
         <Routes>
@@ -64,6 +65,7 @@ function Approutes() {
                 <Route path="/view-cart" element={<ViewCart />} />
                 <Route path="/products/:slug" element={<ProductDetails />}/>
                 <Route path="/categories/:name" element={<CategoryProduct /> } />
+                <Route path="/instructor/:uuid" element={<Instructor />} />
                 <Route path="/videos/:slug" element={<Video/>} />
                 <Route path="login" element={<PrivateRoute />}>
                     <Route path="/login" element={<Login />} /> 

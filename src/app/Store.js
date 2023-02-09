@@ -8,6 +8,7 @@ import DeviceSlice from '../features/DeviceSlice';
 import CategorySlice from '../features/CategorySlice';
 import CourseSlice from '../features/CourseSlice';
 import AuthSlice from '../features/AuthSlice';
+import InstructorSlice from '../features/InstructorSlice';
 const store = configureStore({
     reducer: {
       device: DeviceSlice,
@@ -19,6 +20,7 @@ const store = configureStore({
       category:CategorySlice,
       course:CourseSlice,
       auth: AuthSlice,
+      instructor: InstructorSlice,
     },
     middleware: (getDefaultMiddleware) =>
         getDefaultMiddleware({
@@ -27,7 +29,9 @@ const store = configureStore({
                                 'app/getVideo/fulfilled','app/getBrand/fulfilled','app/getStore/fulfilled',
                                 'app/getComment/fulfilled','app/getCategory/fulfilled','follow/getFollow/fulfilled','course/getAllCourses/fulfilled',
                                 'course/getCourseDetails/fulfilled','category/getallDpCategories/fulfilled','course/getAllInstructor/fulfilled',
-                            'auth/userRegByHoolo/fulfilled'],
+                            'auth/userRegByHoolo/fulfilled','instructor/getAllInstructor/fulfilled',
+                            'instructor/getInstructorCourses/fulfilled',
+                            'instructor/getInstructorInfo/fulfilled',],
             },
         }),
   });
