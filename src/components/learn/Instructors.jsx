@@ -18,7 +18,7 @@ export default function Instructors() {
         <Row>
           {instructors && instructors.map((item)=>(
             <Col key={item.uuid} md={3} lg={3} sm={6}>
-              <div className='border-1 rounded-3 bg-light d-flex flex-column justify-content-center align-items-center shadow py-3' style={{height:300}}>
+              <div className='border-1 rounded-3 bg-light d-flex flex-column justify-content-center align-items-center shadow py-3 mb-3' style={{height:300}}>
                   <img style={{width:100,height:100}} className='img-fluid rounded-circle' src={item.profile? item.profile.path: logo} alt="" />
                   <div className='text-center'>
                     <Link to={ `/instructor/${item.uuid}`}>

@@ -42,6 +42,7 @@ import Learn from "../pages/Learn";
 import Course from '../pages/Course';
 import Coursepayment from '../pages/Coursepayment';
 import Instructor from '../pages/Instructor';
+import HnB from './../pages/HnB';
 function Approutes() {
     return (
         <Routes>
@@ -57,7 +58,7 @@ function Approutes() {
                 <Route path="/following" element={<Following />} />
                 <Route path="/collection" element={<Collection />} />
                 <Route path="/store" element={<Stores/>} />
-                <Route path="/shop" element={<Shops/>} />
+                <Route path="/shop" element={<HnB/>} />
                 <Route path="/learn" element={<Learn/>} />
                 <Route path="/workshop/:uuid" element={<Course />} />
                 <Route path="/vendors/videos/:uuid" element={<Vendors/>} />

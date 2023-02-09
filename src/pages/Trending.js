@@ -41,12 +41,14 @@ function Trending() {
         return (
             <div className='container mv1'>
                 <div>
-                    <Container className="upcomingdiv mb-2" style={{marginTop:'4rem'}}>
-                        <div style={{display:'flex',alignItems:'center',marginBottom:'2px'}}>
-                            <h5 style={{paddingTop:'6px',marginRight:'2px',fontWeight:'500'}}>Upcoming Lives</h5><box-icon name='circle' type='solid' animation='flashing' color='#3fda36' ></box-icon>
-                        </div>
-                        <Upcoming/>
-                    </Container>
+                    {
+                    //     <Container className="upcomingdiv mb-2" style={{marginTop:'4rem'}}>
+                    //     <div style={{display:'flex',alignItems:'center',marginBottom:'2px'}}>
+                    //         <h5 style={{paddingTop:'6px',marginRight:'2px',fontWeight:'500'}}>Upcoming Lives</h5><box-icon name='circle' type='solid' animation='flashing' color='#3fda36' ></box-icon>
+                    //     </div>
+                    //     <Upcoming/>
+                    // </Container>
+                    }
                     <Container className="discoversliderdiv mb-4">
                         <div style={{display:'flex',alignItems:'center',marginBottom:'2px'}}>
                             <h5 style={{paddingTop:'6px',marginRight:'2px',fontWeight:'500'}}>Deals You Don't Want To Miss</h5><box-icon name='party' animation='tada' ></box-icon>

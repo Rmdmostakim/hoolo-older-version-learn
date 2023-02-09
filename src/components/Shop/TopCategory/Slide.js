@@ -1,6 +1,6 @@
-import "./Slide.css";
 
- 
+import React from 'react';
+import "./Slide.css";
 
 export default function Slide(props) {
  

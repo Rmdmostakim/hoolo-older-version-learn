@@ -6,6 +6,7 @@ import { Nav } from 'rsuite';
 import Class from '../../assets/css/navmenu.module.css';
 
 export default function Navmenu() {
+    const {pathname:url} = useLocation();
     const location = useLocation();
     const { pathname } = location;
     const [active, setActive] = useState(pathname.replace(/\//g, ''));
@@ -26,9 +27,8 @@ export default function Navmenu() {
                     Feed
                 </Nav.Item>
                 <Nav.Item
-                    eventKey="discover"
                     icon={<AiOutlineCompass />}
-                    className="text-center"
+                    className={url === '/discover'|| url==='/collection' ? Class.menuText+' '+Class.menuText_active : Class.menuText}
                     style={{ paddingInline: '0px', paddingBottom: '10px' }}
                     as={Link}
                     to="/discover"
@@ -36,9 +36,8 @@ export default function Navmenu() {
                     Discover
                 </Nav.Item>
                 <Nav.Item
-                    eventKey="shop"
                     icon={<AiOutlineShopping />}
-                    className="text-center"
+                    className={url === '/shop'|| url.includes('/vendors') || url.includes('/categories') ? Class.menuText+' '+Class.menuText_active : Class.menuText}
                     style={{ paddingInline: '0px', paddingBottom: '10px' }}
                     as={Link}
                     to="/shop"
@@ -46,9 +45,8 @@ export default function Navmenu() {
                     Shop
                 </Nav.Item>
                 <Nav.Item
-                    eventKey="learn"
                     icon={<HiOutlineBookOpen />}
-                    className="text-center"
+                    className={url === '/learn' || url.includes('/workshop')|| url.includes('/instructor') ? Class.menuText_active : Class.menuText}
                     style={{ paddingInline: '0px', paddingBottom: '10px' }}
                     as={Link}
                     to="/learn"

@@ -7,24 +7,22 @@
 	font-weight: 700;
 	font-size: 20px;
 	border-radius: 0px;
-	background-color: rgb(206, 206, 206);
 	color: black;
 	border: none;
+	background-color: #cfeaff !important;
 }
-.btntabs:hover,
 .btntabs:active,
 .btntabs:focus {
-	background-color: #1c405d !important;
-	color: rgb(255, 255, 255);
+background-color: #1c405d !important;
+color: rgb(255, 255, 255) !important;
 }
 .active {
 	background-color: #1c405d !important;
-	color: rgb(255, 255, 255);
+	color: rgb(255, 255, 255) !important;
 }
 .nav {
 	display: flex;
 	width: 100%;
-
 }
 .tab {
 	width: 50%;

@@ -43,7 +43,7 @@ export default function DesktopNav(props) {
 
 	return (
 		<>
-			<Navbar sticky="top" className="osahan-nav d-nav" ref={ref}>
+			<Navbar sticky="top" className="px-0" ref={ref}>
 				<div className={`${Class.conatiner} ps-2 ps-lg-3 pe-2`} ref={ref}>
 					<div className={Class.leftandmid}>
 						<div className={`${Class.left}`}>

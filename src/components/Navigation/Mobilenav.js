@@ -8,42 +8,42 @@ function Mobilenav() {
             <div className={Classes.menuBox}>
                 <div className={Classes.menuItem}>
                     <NavLink to="/">
-                        <div className={url === '/' || url === '/following' || url === '/discover' ? Classes.menuIcon+' '+Classes.menuIcon_active :Classes.menuIcon}>
+                        <div className={url === '/'  ? Classes.menuIcon+' '+Classes.menuIcon_active :Classes.menuIcon}>
                         <iconify-icon icon="carbon:home"></iconify-icon>
                         </div>
-                        <div className={url === '/' || url === '/following' || url === '/discover' ? Classes.menuText+' '+Classes.menuText_active : Classes.menuText}>
+                        <div className={url === '/'  ? Classes.menuText+' '+Classes.menuText_active : Classes.menuText}>
                             <small>Home</small>
                         </div>
                     </NavLink>
                 </div>
                 <div className={Classes.menuItem}>
-                    <Link to="/store">
-                        <div className={url === '/store' ||  url.includes('/vendors') ? Classes.menuIcon+' '+Classes.menuIcon_active :Classes.menuIcon}>
-                         
-                        <iconify-icon icon="clarity:store-line"></iconify-icon>   
+                    <NavLink to="/discover">
+                        <div className={url === '/discover'|| url.includes('/collection')  ? Classes.menuIcon+' '+Classes.menuIcon_active :Classes.menuIcon}>
+                        <iconify-icon icon="ph:gift-light"></iconify-icon>
                         </div>
-                        <div className={url === '/store'|| url.includes('/vendors') ? Classes.menuText+' '+Classes.menuText_active : Classes.menuText}>
-                            <small>Stores</small>
-                        </div>
-                    </Link>
-                </div>
-                <div className={Classes.menuItem}>
-                    <NavLink to="/collection">
-                        <div className={url === '/collection'|| url.includes('/shop') || url.includes('/categories')  ? Classes.menuIcon+' '+Classes.menuIcon_active :Classes.menuIcon}>
-                        <iconify-icon icon="bi:collection"></iconify-icon>
-                        </div>
-                        <div className={url === '/collection'|| url.includes('/shop')|| url.includes('/categories')  ? Classes.menuText+' '+Classes.menuText_active : Classes.menuText}>
-                            <small>Collection</small>
+                        <div className={url === '/discover'|| url.includes('/collection') ? Classes.menuText+' '+Classes.menuText_active : Classes.menuText}>
+                            <small>Discover</small>
                         </div>
                     </NavLink>
                 </div>
                 <div className={Classes.menuItem}>
-                    <NavLink to="/my-account">
-                        <div className={url === '/my-account' ? Classes.menuIcon+' '+Classes.menuIcon_active :Classes.menuIcon}>
-                        <iconify-icon icon="clarity:user-line"></iconify-icon>
+                    <Link to="/shop">
+                        <div className={url === '/shop' ||  url.includes('/vendors') || url.includes('/categories') ? Classes.menuIcon+' '+Classes.menuIcon_active :Classes.menuIcon}>
+                         
+                        <iconify-icon icon="clarity:store-line"></iconify-icon>   
                         </div>
-                        <div className={url === '/my-account' ? Classes.menuText+' '+Classes.menuText_active : Classes.menuText}>
-                            <small>Profile</small>
+                        <div className={url === '/shop'|| url.includes('/vendors') || url.includes('/categories') ? Classes.menuText+' '+Classes.menuText_active : Classes.menuText}>
+                            <small>Shop</small>
+                        </div>
+                    </Link>
+                </div>
+                <div className={Classes.menuItem}>
+                    <NavLink to="/learn">
+                        <div className={url === '/learn' || url.includes('/workshop')|| url.includes('/instructor') ? Classes.menuIcon+' '+Classes.menuIcon_active :Classes.menuIcon}>
+                        <iconify-icon icon="gala:book"></iconify-icon>
+                        </div>
+                        <div className={url === '/learn' || url.includes('/workshop')|| url.includes('/instructor') ? Classes.menuText+' '+Classes.menuText_active : Classes.menuText}>
+                            <small>Learn</small>
                         </div>
                     </NavLink>
                 </div>

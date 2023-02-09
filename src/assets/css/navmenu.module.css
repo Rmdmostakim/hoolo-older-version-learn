@@ -1,7 +1,10 @@
 .link a {
   text-decoration: none !important;
   color: #747474;
+  text-align: center;
 }
-.active {
-  color: #1675e0 !important;
+.menuText_active{
+  color:#1675e0 !important;
+  text-align: center;
+  border-bottom: 4px solid #1675e0 !important;
 }

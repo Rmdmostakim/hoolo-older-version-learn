@@ -1,10 +1,8 @@
-
 import React,{Fragment,useState,useEffect} from 'react'
 import DesktopNav from '../components/Navigation/DesktopNav';
 import Mobilenav from '../components/Navigation/Mobilenav';
 import ScrollToTop from "react-scroll-to-top";
 import { CustomScrollToTop } from "../components/Atomics/ScrollToTop/ScrollToTop";
-import Linkmenu from '../components/Navigation/Linkmenu';
 import Footer from '../components/Footer/Footer';
 import { useLocation } from 'react-router-dom';
 import { useCallback } from 'react';
@@ -106,8 +104,8 @@ function AppLayouts({children}) {
         <div>
             <DesktopNav/> 
             {!vendorMenuHide && <VendorMenu uuid={vendorUuid}/>}  
-            <div onClick={hideHandler}>{children}</div>
-            {width< 600 && !showpronav ? <Mobilenav/> : null}
+            <div onClick={hideHandler} style={vendorMenuHide?{marginTop:'3rem'}:{marginTop:'6rem'}}>{children}</div>
+            {width< 600 &&  <Mobilenav/>}
             <ScrollToTop
                 smooth
                 component={<CustomScrollToTop />}

@@ -65,7 +65,7 @@ function Dashboard() {
     
     return (
         <>
-            <Container className="mt-4">
+            <Container>
                 <div className={Class.dashboard}>
                     <div className={`${Class.cards} mb-3`}>
                         <div className={Class.profile}>

@@ -2,12 +2,6 @@
 	width: 100%;
 	height: 20rem;
 }
-.dp {
-	width: 100%;
-	height: auto;
-	border-radius: 50%;
-	max-width: 6rem;
-}
 .banner {
 	position: relative;
 	height: 20rem;
@@ -31,6 +25,7 @@
 	height: 20rem;
 	width: 100%;
 }
+
 .info {
 	position: relative;
 	top: -200%;
@@ -44,6 +39,11 @@
 	color: white;
 	font-weight: 500;
 	font-size: 28px;
+}
+.dp {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
 }
 .followBlock {
 	display: flex;
@@ -69,14 +69,10 @@
 	align-items: center;
 	justify-content: center;
 }
-@media screen and (min-width: 426px) and (max-width: 1320px) {
-	.dp {
-		width: 6rem !important;
-		height: 6rem !important;
-	}
-	.name {
-		font-weight: 400;
-		font-size: 20px;
+
+@media (max-width: 767px) {
+	.imagebanner {
+		height: 15rem;
 	}
 	.banner {
 		height: 15rem;
@@ -85,40 +81,16 @@
 		height: 15rem;
 	}
 	.info {
+		top: -200%;
 		height: 15rem;
 	}
 	.shadow {
+		top: -100%;
 		height: 15rem;
 	}
-}
-@media (max-width: 425px) {
 	.dp {
-		width: 4rem !important;
-		height: 4rem !important;
-	}
-	.name {
-		font-weight: 400;
-		font-size: 14px;
-	}
-	.banner {
-		height: 10rem;
-	}
-	.image {
-		height: 10rem;
-	}
-	.info {
-		height: 10rem;
-	}
-	.shadow {
-		height: 10rem;
-	}
-	.followBlock {
-		font-size: 12px;
-		margin-top: 6px;
-		margin-bottom: 6px;
-	}
-	.followbtn {
-		font-size: 12px;
-		border: 1px solid white;
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
 	}
 }

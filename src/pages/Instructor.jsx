@@ -28,7 +28,7 @@ export default function Instructor() {
         <div>
             {instructorInfo && <Instractorbanner
                 bannerimg={bannerc}
-                dp={instructorInfo.profile.path}
+                dp={instructorInfo && instructorInfo.profile ? instructorInfo.profile.path:''}
                 name={instructorInfo.user_name}
                 follower="0"
             />}

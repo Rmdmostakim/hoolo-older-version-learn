@@ -8,6 +8,7 @@ import Courses from './Courses';
 
 export default function Instractor(props) {
     const { tabElement, setTabElement } = props;
+    console.log(tabElement);
     const {
         isLoading,
         // isError,
@@ -20,6 +21,7 @@ export default function Instractor(props) {
             <div className={Class.nav}>
                 <div className={Class.tab}>
                     <Button
+                        variant='none'
                         className={
                             tabElement === 'workshops'
                                 ? `${Class.btntabs} ${Class.active}`
@@ -32,6 +34,7 @@ export default function Instractor(props) {
                 </div>
                 <div className={Class.tab}>
                     <Button
+                    variant='none'
                         className={
                             tabElement === 'about'
                                 ? `${Class.btntabs} ${Class.active}`
@@ -56,7 +59,7 @@ export default function Instractor(props) {
                                 />
                             </div>
                             <div>
-                                <p className="fw-bold h6">{`${instructorInfo.full_name} ${instructorInfo.user_name}`}</p>
+                                <p className="fw-bold h6 px-1">{`${instructorInfo.full_name} ${instructorInfo.user_name}`}</p>
                             </div>
                         </div>
                         <div className={`${Class.textJustify} border-bottom border-dark pb-2`}>

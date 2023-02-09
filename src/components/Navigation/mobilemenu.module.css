@@ -37,9 +37,9 @@
 }
 
 .menuText_active{
-   color: orange !important;
+   color:#1675e0 !important;
 }
 .menuIcon_active{
-    border-top: 2px solid orange;
-    color: #FFC502 !important;
+    border-top: 2px solid #1675e0;
+    color: #1675e0 !important;
  }
